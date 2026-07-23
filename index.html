@@ -3,69 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Plan Básico | Tu Negocio</title>
+    <title>Sabor & Carbón | Restaurante & Grill</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header / Menú -->
+    <!-- Menú de navegación -->
     <header class="navbar">
-        <div class="logo">MiMarca<span>.</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <button class="cta-btn" onclick="scrollToContacto()">Empezar</button>
+        <div class="container">
+            <a href="#inicio" class="logo">Sabor & Carbón<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Nuestra Carta</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#reservas" class="btn-nav">Reservar Mesa</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero / Portada -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Diseño Web Moderno y Rápido para tu Negocio</h1>
-            <p>Destaca en internet con una página web optimizada, atractiva y adaptada a todos los dispositivos.</p>
-            <a href="#contacto" class="btn-primary">Solicitar Información</a>
-        </div>
-    </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="services">
-        <h2>Lo que ofrecemos</h2>
-        <div class="services-grid">
-            <div class="card">
-                <div class="icon">🚀</div>
-                <h3>Carga Rápida</h3>
-                <p>Código optimizado desde cero para una velocidad de navegación superior.</p>
-            </div>
-            <div class="card">
-                <div class="icon">📱</div>
-                <h3>100% Responsive</h3>
-                <p>Tu sitio se verá impecable en ordenadores, tablets y teléfonos móviles.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🎯</div>
-                <h3>Diseño Claro</h3>
-                <p>Estructura enfocada en captar clientes y transmitir profesionalidad.</p>
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <span class="badge">Especialidad en Carnes a la Brasa</span>
+                <h1>Una experiencia gastronómica inolvidable</h1>
+                <p>Ingredientes frescos, fuegos tradicionales y el toque secreto de nuestro chef en el corazón de la ciudad.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn-primary">Ver la Carta</a>
+                    <a href="#reservas" class="btn-secondary">Reservar Mesa</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de Contacto -->
-    <section id="contacto" class="contact">
-        <h2>Contáctanos</h2>
-        <form id="contactForm">
-            <input type="text" id="nombre" placeholder="Tu Nombre" required>
-            <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
-            <textarea id="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
-            <button type="submit" class="btn-primary">Enviar Mensaje</button>
-        </form>
+    <!-- Sección Menú Destacado -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Platos Destacados</h2>
+                <p>Descubre algunas de nuestras especialidades preparadas al momento</p>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Chuletón a la Piedra</h3>
+                            <span class="price">28€</span>
+                        </div>
+                        <p>500g de maduración propia acompañados de patatas rústicas y pimientos del padrón.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Burger Sabor & Carbón</h3>
+                            <span class="price">14€</span>
+                        </div>
+                        <p>200g de buey, queso cheddar ahumado, bacon crujiente y cebolla caramelizada.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img" style="background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="menu-info">
+                        <div class="menu-header">
+                            <h3>Risotto de Setas y Trufa</h3>
+                            <span class="price">16€</span>
+                        </div>
+                        <p>Arroz cremoso con variedad de hongos silvestres, parmesano y aceite de trufa negra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Tradición y Pasión por el Buen Comer</h2>
+                <p>Desde 2018, en <strong>Sabor & Carbón</strong> nos dedicamos a ofrecer la mejor cocina a la brasa. Seleccionamos cuidadosamente los cortes de carne y los vegetales locales para llevar a tu mesa un sabor auténtico e inigualable.</p>
+                <div class="features">
+                    <div class="feature-item">🔥 brasas de leña de encina</div>
+                    <div class="feature-item">🍷 Selección de vinos locales</div>
+                    <div class="feature-item">🌿 Productos de proximidad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Reservas -->
+    <section id="reservas" class="reservas-section">
+        <div class="container">
+            <div class="reservas-box">
+                <h2>Reserva tu Mesa</h2>
+                <p>Garantiza tu sitio en nuestro restaurante en solo un minuto</p>
+
+                <form id="reservaForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" placeholder="Ej. 612 345 678" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="personas">Nº de Personas</label>
+                            <select id="personas" required>
+                                <option value="1">1 Persona</option>
+                                <option value="2" selected>2 Personas</option>
+                                <option value="4">4 Personas</option>
+                                <option value="6">6+ Personas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-block">Confirmar Reserva</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 MiMarca. Todos los derechos reservados.</p>
+        <div class="container footer-content">
+            <p><strong>Sabor & Carbón</strong> — Calle Gastronomía 12, Ciudad</p>
+            <p>&copy; 2026 Demo de Sitio Web Creada para Plan Básico.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
