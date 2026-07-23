@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Plan Básico | Tu Negocio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Menú -->
+    <header class="navbar">
+        <div class="logo">MiMarca<span>.</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="cta-btn" onclick="scrollToContacto()">Empezar</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Diseño Web Moderno y Rápido para tu Negocio</h1>
+            <p>Destaca en internet con una página web optimizada, atractiva y adaptada a todos los dispositivos.</p>
+            <a href="#contacto" class="btn-primary">Solicitar Información</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <h2>Lo que ofrecemos</h2>
+        <div class="services-grid">
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>Carga Rápida</h3>
+                <p>Código optimizado desde cero para una velocidad de navegación superior.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>100% Responsive</h3>
+                <p>Tu sitio se verá impecable en ordenadores, tablets y teléfonos móviles.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎯</div>
+                <h3>Diseño Claro</h3>
+                <p>Estructura enfocada en captar clientes y transmitir profesionalidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <form id="contactForm">
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+            <textarea id="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MiMarca. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
